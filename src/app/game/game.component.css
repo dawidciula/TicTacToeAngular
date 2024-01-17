@@ -1,0 +1,47 @@
+/* Resetowanie stylów dla lepszej konsystencji */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Stylowanie głównego kontenera gry */
+  .game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  /* Stylowanie wierszy planszy */
+  .row {
+    display: flex;
+  }
+  
+  /* Stylowanie poszczególnych komórek planszy */
+  .cell {
+    width: 40px; /* Dostosuj szerokość komórek */
+    height: 40px; /* Dostosuj wysokość komórek */
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Dodatkowy styl dla aktywnej komórki (gdy gracz kliknie) */
+  .cell.active {
+    background-color: #aaf;
+    cursor: not-allowed;
+  }
+  
+  /* Stylowanie wyników (opcjonalnie) */
+  .result {
+    margin-top: 20px;
+    font-size: 1.5em;
+  }
+  
